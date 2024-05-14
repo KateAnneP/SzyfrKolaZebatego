@@ -15,7 +15,7 @@ class SzyfrKolaZebatego:
                 else:
                     zaszyfrowany_tekst += zaszyfrowana_litera
             else:
-                zaszyfrowany_tekst += litera
+                continue  # Pomijamy spacje
         return zaszyfrowany_tekst
 
     def deszyfruj(self, zaszyfrowany_tekst):
@@ -29,13 +29,7 @@ class SzyfrKolaZebatego:
                 else:
                     deszyfrowany_tekst += deszyfrowana_litera
             else:
-                deszyfrowany_tekst += litera
+                continue  # Pomijamy spacje
         return deszyfrowany_tekst
 
-klucz = 'c'  # Przykładowy klucz
-tekst = "To jest tekst do zaszyfrowania!"
-szyfr = SzyfrKolaZebatego(klucz)
-zaszyfrowany_tekst = szyfr.szyfruj(tekst)
-print("Zaszyfrowany tekst:", zaszyfrowany_tekst)
-deszyfrowany_tekst = szyfr.deszyfruj(zaszyfrowany_tekst)
-print("Deszyfrowany tekst:", deszyfrowany_tekst)
+
