@@ -1,4 +1,4 @@
-from szyfrKolaZebatego import SzyfrKolaZebatego
+from wheelcypher import SzyfrKolaZebatego
 import file_manager
 
 normal_text = file_manager.read_file('./data/normal.txt')
